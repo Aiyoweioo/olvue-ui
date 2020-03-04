@@ -10,7 +10,7 @@
         v-model="modelValue"
       >
     </span>
-    <span calss="ol-radio__label">
+    <span class="ol-radio__label">
       <slot></slot>
       <!-- 如果没有传入内容，就将label当成内容 -->
       <template v-if="!$slots.default">{{label}}</template>
@@ -74,7 +74,7 @@ export default {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  .ol-radio__input {
+  .hm-radio__input {
     white-space: nowrap;
     cursor: pointer;
     outline: none;
@@ -122,7 +122,6 @@ export default {
     padding-left: 10px;
   }
 }
-
 .ol-radio.is-checked {
   .ol-radio__input {
     .ol-radio__inner {

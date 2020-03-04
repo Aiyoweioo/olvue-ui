@@ -10,7 +10,7 @@
         :value="label"
       >
     </span>
-    <span calss="ol-checkbox__label">
+    <span class="ol-checkbox__label">
       <slot></slot>
       <!-- 如果没有传入内容，就将label当成内容 -->
       <template v-if="!$slots.default">{{label}}</template>
