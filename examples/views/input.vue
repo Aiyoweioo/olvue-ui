@@ -36,14 +36,13 @@
 <script>
 
 export default {
-  name: 'App',
+  name: 'demo',
   data () {
     return {
       username: 'olivia',
       password: ''
     }
   }
-  
 }
 </script>
 

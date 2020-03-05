@@ -1,12 +1,31 @@
 # 效果演示
 - 初始化vue项目: vue create demo
 - 安装组件库: npm install olvue-ui
-- 全局导入
+- 由于该组件库是使用sass编写的，因此还需要安装:npm install sass sass-loader
+- 导入方式有两种选择：
+  1. 全局导入：在main.js写下以下内容：
 ```
+import Vue from 'vue'
 import OlUI from 'olvue-ui'
-import 'olvue-ui/lib/olvue-ui.css'
 Vue.use(OlUI)
 ```
+以上代码已经完成了olvue-ui的导入。
+  2. 组件按需导入：若你只是希望引入部分组件，比如Button和Input，那么只需要在main.js中写下以下内容：
+```
+import Vue from 'vue'
+import { OlButton, OlInput } from 'olvue-ui'
+Vue.use(OlButton)
+Vue.use(OlInput)
+```
+
+# 目录说明
+- components: olvue-ui组件库的自定义的组件
+- examples/main.js: 项目的主入口
+- examples/views: 所有自定义组件的demo
+- package: 发布到npm包的内容
+- .babelrc: 组件按需导入需要配置的文件
+- vue.config.js: 发布到npm修改webpack配置的文件
+
 # ol组件库
 仿element ui组件库。实现的组件有ol-button ol-checkbox ol-checkbox-group ol-dialog ol-form ol-form-item ol-input ol-radio ol-radio-group ol-switch ol-row ol-col
 # 布局

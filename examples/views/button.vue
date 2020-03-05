@@ -68,7 +68,7 @@
 
 <script>
 export default {
-  name: 'App',
+  name: 'demo',
   methods: {
     fn () {
       console.log(123)

@@ -1,8 +1,10 @@
 {
   "name": "olvue-ui",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "private": false,
-  "main": "dist/olvue-ui.umd.min.js",
+  "main": "components/index.js",
+  "style": "package/index.css",
+  "files": ["components", "package"],
   "author": {
     "name": "邓婷婷"
   },
@@ -10,7 +12,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name index --dest package components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -22,6 +24,7 @@
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-standard": "^5.1.0",
     "babel-eslint": "^10.0.3",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
